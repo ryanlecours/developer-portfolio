@@ -2,63 +2,70 @@
 
 A modern single-page portfolio built with **Next.js 16** and **Tailwind CSS v4**, showcasing my work as a frontend-leaning full-stack engineer specializing in React, TypeScript, and GraphQL.
 
-Deployed with **Vercel** at [ryanlecours.dev](https://ryanlecours.dev).
+🌐 **Live site:** [ryanlecours.dev](https://ryanlecours.dev)  
+🚀 **Deployed on:** [Vercel](https://vercel.com)
 
 ---
 
 ## 🚀 Tech Stack
 
-- **Framework:** [Next.js 16 (App Router + Turbopack)](https://nextjs.org/)
-- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/docs/v4-beta)
-- **Language:** TypeScript
-- **Deployment:** [Vercel](https://vercel.com)
-- **Tooling:** Prettier + Tailwind Plugin for formatting
-- **Image Optimization:** Next/Image
-- **Hosting:** Custom domain via Vercel DNS
+| Category | Tools |
+|-----------|-------|
+| **Framework** | [Next.js 16 (App Router + Turbopack)](https://nextjs.org/) |
+| **Styling** | [Tailwind CSS v4](https://tailwindcss.com/docs/v4-beta) |
+| **Language** | TypeScript |
+| **Deployment** | Vercel |
+| **Tooling** | Prettier + Tailwind Plugin |
+| **Image Optimization** | Next/Image |
+| **Hosting** | Custom domain via Vercel DNS |
 
 ---
 
 ## 📁 Project Structure
 
+```text
 src/
-├─ app/
-│ ├─ layout.tsx # Root layout with metadata
-│ ├─ page.tsx # Main portfolio page
-│ ├─ globals.css # Tailwind CSS import
-│ └─ not-found.tsx # 404 page (optional)
-└─ public/
-├─ me.jpg # Headshot image
-└─ resume.pdf # Downloadable resume
-
+ ├─ app/
+ │   ├─ layout.tsx       # Root layout with metadata
+ │   ├─ page.tsx         # Main portfolio page
+ │   ├─ globals.css      # Tailwind CSS import
+ │   └─ not-found.tsx    # 404 page (optional)
+ └─ public/
+     ├─ me.jpg           # Headshot image
+     └─ resume.pdf       # Downloadable résumé
+```
 
 ---
 
 ## ⚙️ Local Development
 
-### 1. Clone this repo
+### 1️⃣ Clone the repo
 ```bash
 git clone https://github.com/ryanlecours/ryanlecours.dev.git
 cd ryanlecours.dev
 ```
 
-### 2. Install dependencies
+### 2️⃣ Install dependencies
 ```bash
 npm install
 ```
 
-### 3. Run the dev server
+### 3️⃣ Start the dev server
 ```bash
 npm run dev
 ```
-Visit http://localhost:3000
+Visit → **http://localhost:3000**
 
-### 4. Build & preview production
+### 4️⃣ Build & preview production
 ```bash
 npm run build
 npm run start
 ```
 
-### Linting & Formatting
+---
+
+## 🧹 Linting & Formatting
+
 Format with Prettier + Tailwind plugin:
 ```bash
 npm run format
@@ -69,23 +76,42 @@ Run Next.js lint:
 npm run lint
 ```
 
-### Deployment
-Deployed automatically via Vercel from the `main` branch.
+---
 
-### Features
-- Fully responsive
-- Accessible and fast (Lighthouse 95+ score)
-- Uses Next.js image optimization
-- Dark, minimal theme powered by Tailwind CSS v4
-- Auto-deployed on merge via Vercel CI/CD
+## 🌐 Deployment
 
-### Author
-**Ryan LeCours**
-Frontend-Leaning Full-Stack Engineer
-📍 Bellingham, WA
-- [ryanlecours.dev](https://www.ryanlecours.dev)
-- [LinkedIn](https://www.linkedin.com/in/ryan-lecours/)
-- [Github](https://github.com/ryanlecours)
+This portfolio is **automatically deployed** via Vercel from the `main` branch.  
+Every push → Preview deployment  
+Merge → Production deployment at [ryanlecours.dev](https://ryanlecours.dev)
 
-### License
-This portfolio project is open source under the [MIT License](LICENSE)
+---
+
+## ✨ Features
+
+- ⚡ **Fully responsive** and mobile-friendly  
+- ♿ **Accessible & fast** (Lighthouse 95+ score)  
+- 🖼️ **Next.js Image optimization**  
+- 🌙 **Dark, minimal theme** via Tailwind CSS v4  
+- 🔁 **Automatic CI/CD** with Vercel  
+
+---
+
+## 👤 Author
+
+**Ryan LeCours**  
+Frontend-leaning Full-Stack Engineer  
+📍 Bellingham, WA  
+
+- 🌐 [ryanlecours.dev](https://ryanlecours.dev)  
+- 💼 [LinkedIn](https://www.linkedin.com/in/ryan-lecours/)  
+- 💻 [GitHub](https://github.com/ryanlecours)
+
+---
+
+## 🪶 License
+
+This project is open source under the [MIT License](LICENSE).
+
+---
+
+> _Built with ❤️ using Next.js 16 + Tailwind CSS v4 and deployed on Vercel._
