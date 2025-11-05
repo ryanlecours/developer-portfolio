@@ -48,7 +48,7 @@ export default function Page() {
       <section className="mx-auto max-w-6xl px-4 py-12 md:py-20">
         <div className="grid gap-10 md:grid-cols-[1.1fr_.9fr] items-center">
           <div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-500/10 px-3 py-1 text-emerald-300 text-xs mb-4">
+            <div className="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-500/10 px-3 py-1 text-emerald-300 text-sm mb-4">
               <span className="inline-block size-2 rounded-full bg-emerald-300" />
               Open to senior frontend roles
             </div>
@@ -78,7 +78,7 @@ export default function Page() {
                 GitHub
               </a>
               <a
-                href="https://www.linkedin.com/in/ryanlecours/"
+                href="https://www.linkedin.com/in/ryan-lecours/"
                 className="rounded-xl border border-white/15 px-4 py-2 text-sm hover:border-white/25 hover:bg-white/5"
               >
                 LinkedIn
