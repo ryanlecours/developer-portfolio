@@ -18,7 +18,7 @@ const experience: Experience[] = [
       "Built shared geospatial UI packages and reusable time-input control adopted across teams.",
       "Improved CI/CD, type-safety, and testing (TypeScript, RTL/Jest) while mentoring new engineers.",
     ],
-    tags: ["React", "TypeScript", "Monorepo", "CI/CD", "Testing"],
+    tags: ["React", "TypeScript", "Monorepo", "CI/CD", "Cypress", "Jest" ],
   },
   {
     company: "Fidelity Investments",
