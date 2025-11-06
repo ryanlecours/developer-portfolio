@@ -1,3 +1,4 @@
+import TechIconGrid from "@/components/tech-icon-grid";
 import Image from "next/image";
 
 type Experience = {
@@ -18,7 +19,7 @@ const experience: Experience[] = [
       "Built shared geospatial UI packages and reusable time-input control adopted across teams.",
       "Improved CI/CD, type-safety, and testing (TypeScript, RTL/Jest) while mentoring new engineers.",
     ],
-    tags: ["React", "TypeScript", "Monorepo", "CI/CD", "Cypress", "Jest" ],
+    tags: ["React", "TypeScript", "Monorepo", "CI/CD", "Cypress", "Jest"],
   },
   {
     company: "Fidelity Investments",
@@ -92,7 +93,7 @@ export default function Page() {
             </div>
 
             <div className="mt-6 text-xs text-neutral-400">
-              Bellingham, WA • React • TypeScript • GraphQL • Monorepos • CI/CD
+              Bellingham, WA
             </div>
           </div>
 
@@ -113,7 +114,16 @@ export default function Page() {
 
       {/* Experience */}
       <section className="mx-auto max-w-6xl px-4 pb-16 md:pb-24">
-        <h2 className="text-2xl md:text-3xl font-semibold">Work Experience</h2>
+        <div className="rounded-2xl border border-white/10 bg-neutral-900/40 p-6">
+            <h2 className="text-center text-2xl font-semibold">Tech Stack</h2>
+            <p className="mt-2 text-center text-sm text-gray-600 dark:text-gray-400">
+              Click any icon to learn more
+            </p>
+            <div className="mt-6">
+              <TechIconGrid />
+            </div>
+          </div>
+        <h2 className="mt-12 text-2xl md:text-3xl font-semibold">Work Experience</h2>
         <div className="mt-8 grid gap-6">
           {experience.map((job) => (
             <article
