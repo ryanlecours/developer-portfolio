@@ -29,10 +29,10 @@ src/
  │   ├─ layout.tsx       # Root layout with metadata
  │   ├─ page.tsx         # Main portfolio page
  │   ├─ globals.css      # Tailwind CSS import
- │   └─ not-found.tsx    # 404 page (optional)
+ │   └─ not-found.tsx    # 404 page
  └─ public/
      ├─ me.jpg           # Headshot image
-     └─ resume.pdf       # Downloadable résumé
+     └─ resume.pdf       # Downloadable resume
 ```
 
 ---
