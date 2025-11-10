@@ -121,6 +121,51 @@ export default function Page() {
           {/* MIDDLE COLUMN */}
           <div className="flex flex-col gap-6 xl:col-start-2">
             <Card className="p-5">
+            <SectionHeader title="Work Experience" />
+
+            <div className="mt-8 grid gap-6">
+              {experience.map((job) => (
+                <article
+                  key={`${job.company}-${job.role}`}
+                  className="border-foreground/10 bg-background/30 rounded-2xl border p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.04),0_12px_30px_-12px_rgba(0,0,0,0.6)] supports-[backdrop-filter]:backdrop-blur-sm"
+                >
+                  <div className="flex flex-wrap items-baseline justify-between gap-2">
+                    <h3 className="text-lg font-semibold md:text-xl">
+                      {job.role} — {job.company}
+                    </h3>
+                    <span className="text-foreground/60 text-xs">
+                      {job.period}
+                    </span>
+                  </div>
+
+                  <ul className="text-foreground/90 mt-4 list-disc space-y-2 pl-5">
+                    {job.bullets.map((b, i) => (
+                      <li key={i}>{b}</li>
+                    ))}
+                  </ul>
+
+                  {job.tags?.length ? (
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {job.tags.map((t) => (
+                        <span
+                          key={t}
+                          className="border-foreground/10 bg-background/20 text-foreground/80 rounded-full border px-2.5 py-1 text-xs"
+                        >
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                  ) : null}
+                </article>
+              ))}
+            </div>
+          </Card>
+            
+          </div>
+
+          {/* RIGHT COLUMN */}
+          <div className="flex flex-col gap-6 xl:col-start-3">
+          <Card className="p-5">
               <SectionHeader
                 title="My Tech Stack"
                 subtitle="Technologies I use most"
@@ -187,49 +232,7 @@ export default function Page() {
                 </a>
               </div>
             </Card>
-          </div>
-
-          {/* RIGHT COLUMN */}
-          <Card className="p-5">
-            <SectionHeader title="Work Experience" />
-
-            <div className="mt-8 grid gap-6">
-              {experience.map((job) => (
-                <article
-                  key={`${job.company}-${job.role}`}
-                  className="border-foreground/10 bg-background/30 rounded-2xl border p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.04),0_12px_30px_-12px_rgba(0,0,0,0.6)] supports-[backdrop-filter]:backdrop-blur-sm"
-                >
-                  <div className="flex flex-wrap items-baseline justify-between gap-2">
-                    <h3 className="text-lg font-semibold md:text-xl">
-                      {job.role} — {job.company}
-                    </h3>
-                    <span className="text-foreground/60 text-xs">
-                      {job.period}
-                    </span>
-                  </div>
-
-                  <ul className="text-foreground/90 mt-4 list-disc space-y-2 pl-5">
-                    {job.bullets.map((b, i) => (
-                      <li key={i}>{b}</li>
-                    ))}
-                  </ul>
-
-                  {job.tags?.length ? (
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {job.tags.map((t) => (
-                        <span
-                          key={t}
-                          className="border-foreground/10 bg-background/20 text-foreground/80 rounded-full border px-2.5 py-1 text-xs"
-                        >
-                          {t}
-                        </span>
-                      ))}
-                    </div>
-                  ) : null}
-                </article>
-              ))}
             </div>
-          </Card>
 
           {/* CTA */}
           <Card className="p-6 xl:col-span-3">

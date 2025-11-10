@@ -18,6 +18,30 @@ export const metadata: Metadata = {
   title: 'Ryan LeCours – Software Engineer',
   description:
     'Frontend-leaning full-stack engineer specializing in React, TypeScript, and GraphQL.',
+    openGraph: {
+    title: "Ryan LeCours — Frontend & Full-Stack Engineer",
+    description:
+      "Building performant, accessible web experiences with React, TypeScript, GraphQL, and modern tooling.",
+    url: "https://ryanlecours.dev",
+    siteName: "Ryan LeCours Portfolio",
+    images: [
+      {
+        url: "https://ryanlecours.dev/me.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Ryan LeCours — Frontend Engineer Portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ryan LeCours — Frontend & Full-Stack Engineer",
+    description:
+      "Frontend-leaning full-stack engineer building fast, accessible UI platforms that help teams ship with confidence.",
+    images: ["https://ryanlecours.dev/me.jpg"],
+  },
 };
 
 export default function RootLayout({
