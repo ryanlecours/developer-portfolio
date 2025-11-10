@@ -1,6 +1,6 @@
-import techList from "@/data/tech-stack.json";
-import { TECH_ICON_REGISTRY, type TechKey } from "./tech-icons";
-import clsx from "clsx";
+import techList from '@/data/tech-stack.json';
+import { TECH_ICON_REGISTRY, type TechKey } from './tech-icons';
+import clsx from 'clsx';
 
 type TechItem = {
   id: TechKey;
@@ -10,12 +10,12 @@ type TechItem = {
 };
 
 type Props = {
-  items?: TechItem[];       // default: reads from JSON
-  size?: number;            // icon size in pixels (default 36)
-  showLabels?: boolean;     // default true
-  openInNewTab?: boolean;   // default true
-  gapClassName?: string;    // override spacing (default gap-6)
-  className?: string;       // wrapper classes
+  items?: TechItem[]; // default: reads from JSON
+  size?: number; // icon size in pixels (default 36)
+  showLabels?: boolean; // default true
+  openInNewTab?: boolean; // default true
+  gapClassName?: string; // override spacing (default gap-6)
+  className?: string; // wrapper classes
 };
 
 export default function TechIconGrid({
@@ -23,7 +23,7 @@ export default function TechIconGrid({
   size = 36,
   showLabels = true,
   openInNewTab = true,
-  gapClassName = "gap-6",
+  gapClassName = 'gap-6',
   className,
 }: Props) {
   const data: TechItem[] = items ?? (techList as TechItem[]);
@@ -31,9 +31,9 @@ export default function TechIconGrid({
   return (
     <div
       className={clsx(
-        "flex flex-wrap items-center justify-center",
+        'flex flex-wrap items-center justify-center',
         gapClassName,
-        className
+        className,
       )}
     >
       {data.map(({ id, url, label, color }) => {
@@ -53,12 +53,12 @@ export default function TechIconGrid({
             href={url}
             aria-label={name}
             title={name}
-            target={openInNewTab ? "_blank" : undefined}
-            rel={openInNewTab ? "noopener noreferrer" : undefined}
+            target={openInNewTab ? '_blank' : undefined}
+            rel={openInNewTab ? 'noopener noreferrer' : undefined}
             className={clsx(
-              "group inline-flex flex-col items-center text-center",
-              "transition-transform hover:scale-110 focus:scale-110",
-              "outline-none focus-visible:ring-2 focus-visible:ring-emerald-500/60 rounded-lg p-1"
+              'group inline-flex flex-col items-center text-center',
+              'transition-transform hover:scale-110 focus:scale-110',
+              'rounded-lg p-1 outline-none focus-visible:ring-2 focus-visible:ring-emerald-500/60',
             )}
           >
             <Icon
@@ -66,7 +66,7 @@ export default function TechIconGrid({
               className="transition-colors"
               style={{
                 color: brand,
-                filter: "var(--icon-filter, none)",
+                filter: 'var(--icon-filter, none)',
               }}
             />
             {showLabels && (

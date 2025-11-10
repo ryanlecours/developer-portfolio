@@ -1,16 +1,16 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 /* Design tokens */
 :root {
   --background: #0b0f14;
   --foreground: #e7ebef;
-  --accent:     #35c48f;
-  --muted:      #99a3ad;
+  --accent: #35c48f;
+  --muted: #99a3ad;
 
   /* surface layers */
-  --surface-1:  255 255 255 / 0.04;
-  --surface-2:  255 255 255 / 0.06;
-  --stroke:     255 255 255 / 0.08;
+  --surface-1: 255 255 255 / 0.04;
+  --surface-2: 255 255 255 / 0.06;
+  --stroke: 255 255 255 / 0.08;
 }
 
 @theme inline {
@@ -19,7 +19,3 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
-
-
-
-

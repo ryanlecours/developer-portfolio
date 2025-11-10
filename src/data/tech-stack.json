@@ -1,15 +1,15 @@
 [
-  { "id": "react",      "url": "https://react.dev/" },
-  { "id": "nextjs",     "url": "https://nextjs.org/" },
+  { "id": "react", "url": "https://react.dev/" },
+  { "id": "nextjs", "url": "https://nextjs.org/" },
   { "id": "typescript", "url": "https://www.typescriptlang.org/" },
-  { "id": "tailwind",   "url": "https://tailwindcss.com/" },
-  { "id": "node",       "url": "https://nodejs.org/" },
-  { "id": "graphql",    "url": "https://graphql.org/" },
+  { "id": "tailwind", "url": "https://tailwindcss.com/" },
+  { "id": "node", "url": "https://nodejs.org/" },
+  { "id": "graphql", "url": "https://graphql.org/" },
   { "id": "postgresql", "url": "https://www.postgresql.org/" },
-  { "id": "prisma",     "url": "https://www.prisma.io/" },
+  { "id": "prisma", "url": "https://www.prisma.io/" },
   { "id": "vue", "url": "https://vuejs.org/" },
-  { "id": "vite",       "url": "https://vitejs.dev/" },
-  { "id": "docker",     "url": "https://www.docker.com/" },
-  { "id": "git",        "url": "https://git-scm.com/" },
-  { "id": "github",     "url": "https://github.com/" }
+  { "id": "vite", "url": "https://vitejs.dev/" },
+  { "id": "docker", "url": "https://www.docker.com/" },
+  { "id": "git", "url": "https://git-scm.com/" },
+  { "id": "github", "url": "https://github.com/" }
 ]

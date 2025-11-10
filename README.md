@@ -9,15 +9,15 @@ A modern single-page portfolio built with **Next.js 16** and **Tailwind CSS v4**
 
 ## 🚀 Tech Stack
 
-| Category | Tools |
-|-----------|-------|
-| **Framework** | [Next.js 16 (App Router + Turbopack)](https://nextjs.org/) |
-| **Styling** | [Tailwind CSS v4](https://tailwindcss.com/docs/v4-beta) |
-| **Language** | TypeScript |
-| **Deployment** | Vercel |
-| **Tooling** | Prettier + Tailwind Plugin |
-| **Image Optimization** | Next/Image |
-| **Hosting** | Custom domain via Vercel DNS |
+| Category               | Tools                                                      |
+| ---------------------- | ---------------------------------------------------------- |
+| **Framework**          | [Next.js 16 (App Router + Turbopack)](https://nextjs.org/) |
+| **Styling**            | [Tailwind CSS v4](https://tailwindcss.com/docs/v4-beta)    |
+| **Language**           | TypeScript                                                 |
+| **Deployment**         | Vercel                                                     |
+| **Tooling**            | Prettier + Tailwind Plugin                                 |
+| **Image Optimization** | Next/Image                                                 |
+| **Hosting**            | Custom domain via Vercel DNS                               |
 
 ---
 
@@ -40,23 +40,28 @@ src/
 ## ⚙️ Local Development
 
 ### 1️⃣ Clone the repo
+
 ```bash
 git clone https://github.com/ryanlecours/ryanlecours.dev.git
 cd ryanlecours.dev
 ```
 
 ### 2️⃣ Install dependencies
+
 ```bash
 npm install
 ```
 
 ### 3️⃣ Start the dev server
+
 ```bash
 npm run dev
 ```
+
 Visit → **http://localhost:3000**
 
 ### 4️⃣ Build & preview production
+
 ```bash
 npm run build
 npm run start
@@ -67,11 +72,13 @@ npm run start
 ## 🧹 Linting & Formatting
 
 Format with Prettier + Tailwind plugin:
+
 ```bash
 npm run format
 ```
 
 Run Next.js lint:
+
 ```bash
 npm run lint
 ```
@@ -88,11 +95,11 @@ Merge → Production deployment at [ryanlecours.dev](https://ryanlecours.dev)
 
 ## ✨ Features
 
-- ⚡ **Fully responsive** and mobile-friendly  
-- ♿ **Accessible & fast** (Lighthouse 95+ score)  
-- 🖼️ **Next.js Image optimization**  
-- 🌙 **Dark, minimal theme** via Tailwind CSS v4  
-- 🔁 **Automatic CI/CD** with Vercel  
+- ⚡ **Fully responsive** and mobile-friendly
+- ♿ **Accessible & fast** (Lighthouse 95+ score)
+- 🖼️ **Next.js Image optimization**
+- 🌙 **Dark, minimal theme** via Tailwind CSS v4
+- 🔁 **Automatic CI/CD** with Vercel
 
 ---
 
@@ -100,10 +107,10 @@ Merge → Production deployment at [ryanlecours.dev](https://ryanlecours.dev)
 
 **Ryan LeCours**  
 Frontend-leaning Full-Stack Engineer  
-📍 Bellingham, WA  
+📍 Bellingham, WA
 
-- 🌐 [ryanlecours.dev](https://ryanlecours.dev)  
-- 💼 [LinkedIn](https://www.linkedin.com/in/ryan-lecours/)  
+- 🌐 [ryanlecours.dev](https://ryanlecours.dev)
+- 💼 [LinkedIn](https://www.linkedin.com/in/ryan-lecours/)
 - 💻 [GitHub](https://github.com/ryanlecours)
 
 ---
