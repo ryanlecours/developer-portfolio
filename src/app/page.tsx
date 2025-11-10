@@ -13,20 +13,21 @@ const experience: Experience[] = [
   {
     company: "DCS Corp",
     role: "Software Engineer III",
-    period: "May 2023 – Present · Bellingham, WA",
+    period: "May 2023 – Present | Remote",
     bullets: [
-      "Led front-end for secure flight-planning systems in React within a monorepo (Nx, Yarn Workspaces).",
-      "Built shared geospatial UI packages and reusable time-input control adopted across teams.",
-      "Improved CI/CD, type-safety, and testing (TypeScript, RTL/Jest) while mentoring new engineers.",
-    ],
+      "Built reusable React + TypeScript packages supporting map-layer rendering, geospatial overlays, and interactive drawing tools used in mission-critical systems.",
+      "Optimized CI/CD pipelines through Azure Blob Storage caching, cutting build times by 91 percent (~50 minutes per build).",
+      "Maintained > 95 percent unit-test coverage with Jest and React Testing Library; mentored engineers to uphold testing standards.",
+      "Created a reusable React time-input component adopted by 4 teams across 3 applications, improving UX consistency and delivery speed."
+      ],
     tags: ["React", "TypeScript", "Monorepo", "CI/CD", "Cypress", "Jest"],
   },
   {
     company: "Fidelity Investments",
     role: "Senior Software Engineer",
-    period: "2018 – 2023",
+    period: "2018 – 2023 | Merrimack, NH",
     bullets: [
-      "Delivered performant web apps in Vue and Angular modernizing benefits platforms.",
+      "Delivered performant web apps in Vue and Angular modernizing 14 benefits platforms.",
       "Built and maintained 13 Node.js GraphQL subgraphs on AWS Lambda replacing legacy REST.",
       "Drove migration of 70+ apps from Bitbucket to GitHub; set standards for Vue/Angular micro-frontends.",
     ],
