@@ -35,118 +35,136 @@ const experience: Experience[] = [
 ];
 
 export default function Page() {
+  const year = new Date().getFullYear();
+
   return (
-    <main className="min-h-screen bg-neutral-950 text-neutral-100">
+    <main className="min-h-screen bg-background text-foreground">
       {/* Header */}
-      <header className="sticky top-0 z-30 backdrop-blur border-b border-white/10 bg-neutral-950/70">
-        <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-          <span className="text-sm text-neutral-300">ryanlecours.dev</span>
-          <span className="text-xs text-neutral-400">Portfolio</span>
+      <header className="sticky top-0 z-30 border-b border-foreground/10 bg-background/70 backdrop-blur">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+          <span className="text-sm text-foreground/80">ryanlecours.dev</span>
+          <span className="text-xs text-foreground/60">Portfolio</span>
         </div>
       </header>
 
       {/* Hero */}
-      <section className="mx-auto max-w-6xl px-4 py-12 md:py-20">
-        <div className="grid gap-10 md:grid-cols-[1.1fr_.9fr] items-center">
-          <div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-500/10 px-3 py-1 text-emerald-300 text-sm mb-4">
-              <span className="inline-block size-2 rounded-full bg-emerald-300" />
-              Open to senior frontend roles
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-              Ryan LeCours
-            </h1>
-            <p className="mt-2 text-lg text-neutral-300">
-              Frontend-Leaning Full-Stack Engineer
-            </p>
-            <p className="mt-4 text-neutral-300">
-              I specialize in React/TypeScript, GraphQL, and developer
-              experience - building fast, accessible UI platforms that help teams
-              ship with confidence.
-            </p>
+      <section className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 sm:px-8 md:grid-cols-[1.1fr_0.9fr]">
+        {/* Left content */}
+        <div className="space-y-6">
+          <span className="inline-flex items-center gap-2 rounded-full border border-[rgba(53,196,143,.35)] bg-[rgba(53,196,143,.12)] px-3 py-1.5 text-sm text-[color:var(--accent)]">
+            <span className="size-1.5 rounded-full bg-[color:var(--accent)] shadow-[0_0_0_3px_rgba(53,196,143,0.25)]" />
+            Open to frontend roles
+          </span>
 
-            <div className="mt-6 flex flex-wrap gap-3">
-              <a
-                href="mailto:hello@ryanlecours.dev"
-                className="rounded-xl bg-white text-neutral-950 px-4 py-2 text-sm font-medium hover:bg-neutral-200"
-              >
-                Email
-              </a>
-              <a
-                href="https://github.com/ryanlecours"
-                className="rounded-xl border border-white/15 px-4 py-2 text-sm hover:border-white/25 hover:bg-white/5"
-              >
-                GitHub
-              </a>
-              <a
-                href="https://www.linkedin.com/in/ryan-lecours/"
-                className="rounded-xl border border-white/15 px-4 py-2 text-sm hover:border-white/25 hover:bg-white/5"
-              >
-                LinkedIn
-              </a>
-              <a
-                href="/ryan_lecours_resume.pdf"
-                className="rounded-xl border border-white/15 px-3 py-2 text-sm hover:border-white/25 hover:bg-white/5"
-              >
-                Resume
-              </a>
-            </div>
+          <h1 className="text-5xl font-semibold tracking-tight">Ryan LeCours</h1>
 
-            <div className="mt-6 text-xs text-neutral-400">
-              Bellingham, WA
-            </div>
+          <p className="max-w-lg text-lg leading-relaxed text-foreground/70">
+            Frontend-leaning full-stack engineer building fast, accessible UI
+            platforms that help teams ship with confidence.
+          </p>
+
+          <div className="flex flex-wrap gap-3 pt-2">
+            <a
+              href="mailto:hello@ryanlecours.dev"
+              className="rounded-full border border-foreground/10 bg-background/10 px-4 py-2 transition-colors hover:bg-[rgba(53,196,143,.2)]"
+            >
+              Email
+            </a>
+            <a
+              href="https://github.com/ryanlecours"
+              className="rounded-full border border-foreground/10 bg-background/10 px-4 py-2 transition-colors hover:bg-[rgba(53,196,143,.2)]"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ryan-lecours/"
+              className="rounded-full border border-foreground/10 bg-background/10 px-4 py-2 transition-colors hover:bg-[rgba(53,196,143,.2)]"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="/ryan_lecours_resume.pdf"
+              className="rounded-full border border-[rgba(53,196,143,.4)] bg-[rgba(53,196,143,.1)] px-4 py-2 text-[color:var(--accent)] transition-colors hover:bg-[rgba(53,196,143,.2)]"
+            >
+              Resume
+            </a>
           </div>
 
-          <div className="justify-self-center md:justify-self-end">
-            <div className="relative aspect-square w-64 md:w-80 rounded-2xl border border-white/10 overflow-hidden">
-              <Image
-                src="/me.jpg"
-                alt="Portrait of Ryan LeCours"
-                fill
-                priority
-                sizes="(max-width: 768px) 16rem, 20rem"
-                className="object-cover"
-              />
-            </div>
+          <p className="pt-2 text-sm text-foreground/60">Bellingham, WA</p>
+        </div>
+
+        {/* Right photo */}
+        <div className="justify-self-center">
+          <div
+            className="
+      relative
+      w-[320px] md:w-[360px]
+      rounded-3xl overflow-hidden
+      bg-white/[0.08] ring-2 ring-white/45
+      shadow-[0_20px_60px_-25px_rgba(0,0,0,0.6)]
+      p-1
+    "
+          >
+
+            <Image
+              src="/me.jpg"
+              alt="Ryan LeCours"
+              width={360}
+              height={450}
+              priority
+              sizes="(max-width: 768px) 320px, 360px"
+              className="
+        block w-full h-auto
+        rounded-[22px]
+        object-cover
+        border border-white/12
+        shadow-[0_10px_40px_-15px_rgba(0,0,0,0.7)]
+      "
+            />
           </div>
         </div>
+
+
       </section>
 
-      {/* Experience */}
+
+      {/* Tech Stack & Work Experience */}
       <section className="mx-auto max-w-6xl px-4 pb-16 md:pb-24">
-        <div className="rounded-2xl border border-white/10 bg-neutral-900/40 p-6">
-            <h2 className="text-center text-2xl font-semibold">Tech Stack</h2>
-            <p className="mt-2 text-center text-sm text-gray-600 dark:text-gray-400">
-              Click any icon to learn more
-            </p>
-            <div className="mt-6">
-              <TechIconGrid />
-            </div>
+        <div className="rounded-3xl border border-foreground/10 bg-background/30 p-6 text-center shadow-[0_10px_50px_-20px_rgba(0,0,0,0.6)] supports-[backdrop-filter]:backdrop-blur-sm sm:p-8">
+          <h2 className="text-2xl font-semibold md:text-3xl">Tech Stack</h2>
+          <p className="mt-2 text-sm text-foreground/60">Click any icon to learn more</p>
+          <div className="mt-6">
+            <TechIconGrid />
           </div>
-        <h2 className="mt-12 text-2xl md:text-3xl font-semibold">Work Experience</h2>
+        </div>
+
+        <h2 className="mt-12 text-2xl font-semibold md:mt-16 md:text-3xl">Work Experience</h2>
+
         <div className="mt-8 grid gap-6">
           {experience.map((job) => (
             <article
               key={`${job.company}-${job.role}`}
-              className="rounded-2xl border border-white/10 bg-neutral-900/40 p-6"
+              className="rounded-2xl border border-foreground/10 bg-background/30 p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.04),0_12px_30px_-12px_rgba(0,0,0,0.6)] supports-[backdrop-filter]:backdrop-blur-sm"
             >
               <div className="flex flex-wrap items-baseline justify-between gap-2">
-                <h3 className="text-lg md:text-xl font-semibold">
-                  {job.role} - {job.company}
+                <h3 className="text-lg font-semibold md:text-xl">
+                  {job.role} — {job.company}
                 </h3>
-                <span className="text-xs text-neutral-400">{job.period}</span>
+                <span className="text-xs text-foreground/60">{job.period}</span>
               </div>
-              <ul className="mt-4 list-disc pl-5 space-y-2 text-neutral-200">
+
+              <ul className="mt-4 list-disc space-y-2 pl-5 text-foreground/90">
                 {job.bullets.map((b, i) => (
                   <li key={i}>{b}</li>
                 ))}
               </ul>
+
               {job.tags?.length ? (
                 <div className="mt-4 flex flex-wrap gap-2">
                   {job.tags.map((t) => (
                     <span
                       key={t}
-                      className="rounded-full bg-white/5 border border-white/10 px-2.5 py-1 text-xs text-neutral-300"
+                      className="rounded-full border border-foreground/10 bg-background/20 px-2.5 py-1 text-xs text-foreground/80"
                     >
                       {t}
                     </span>
@@ -159,8 +177,8 @@ export default function Page() {
       </section>
 
       {/* Footer */}
-      <footer className="mx-auto max-w-6xl px-4 pb-16 text-xs text-neutral-500">
-        © {new Date().getFullYear()} Ryan LeCours • Built with Next.js & Tailwind
+      <footer className="mx-auto max-w-6xl px-4 pb-16 text-xs text-foreground/60">
+        © {year} Ryan LeCours • Built with Next.js & Tailwind
       </footer>
     </main>
   );
