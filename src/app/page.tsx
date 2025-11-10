@@ -44,16 +44,16 @@ export default function Page() {
 
   return (
     <main className="min-h-screen bg-background text-foreground">
-      {/* Top bar */}
+      {/* Header */}
       <header className="sticky top-0 z-40 border-b border-foreground/10 bg-background/75 backdrop-blur">
-        <div className="mx-auto flex max-w-[1400px] items-center justify-between px-4 py-3">
+        <div className="mx-auto flex max-w-[1600px] items-center justify-between px-4 py-3">
           <span className="text-sm text-foreground/80">ryanlecours.dev</span>
           <span className="text-xs text-foreground/60">Portfolio</span>
         </div>
       </header>
 
       {/* Grid */}
-      <div className="mx-auto max-w-[1440px] px-4 py-8 md:py-10">
+      <div className="mx-auto max-w-[1600px] px-4 py-8 md:py-10">
         <div
           className="
             grid gap-6
@@ -93,22 +93,22 @@ export default function Page() {
 
             {/* Quick actions */}
             <div className="mt-4 grid grid-cols-3 gap-3">
-              <a href="https://linkedin.com/in/ryan-lecours/" className="flex items-center justify-center gap-2 rounded-xl border border-foreground/10 bg-background/20 px-3 py-2 hover:bg-emerald-400/15">
+              <a href="https://linkedin.com/in/ryan-lecours/" className="flex items-center justify-center gap-2 rounded-xl border border-foreground/10 bg-background/20 px-3 py-2 hover:bg-emerald-400/15 transition-colors">
                 <Mail className="size-4" /> Email
               </a>
-              <a href="mailto:hello@ryanlecours.dev" className="flex items-center justify-center gap-2 rounded-xl border border-foreground/10 bg-background/20 px-3 py-2 hover:bg-emerald-400/15">
+              <a href="mailto:hello@ryanlecours.dev" className="flex items-center justify-center gap-2 rounded-xl border border-foreground/10 bg-background/20 px-3 py-2 hover:bg-emerald-400/15 transition-colors">
                 <Mail className="size-4" /> LinkedIn
               </a>
               <a
                 href="https://github.com/ryanlecours"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-2 rounded-xl border border-foreground/10 bg-background/20 px-3 py-2 hover:bg-emerald-400/15"
+                className="flex items-center gap-2 rounded-xl border border-foreground/10 bg-background/20 px-3 py-2 hover:bg-emerald-400/15 transition-colors"
               >
                 <SiGithub className="size-4" />
                 GitHub
               </a>
-              <a href="/resume.pdf" className="col-span-2 flex items-center justify-center gap-2 rounded-xl border border-emerald-400/30 bg-emerald-400/10 px-3 py-2 text-emerald-300 hover:bg-emerald-400/15">
+              <a href="/resume.pdf" className="col-span-2 flex items-center justify-center gap-2 rounded-xl border border-emerald-400/30 bg-emerald-400/10 px-3 py-2 text-emerald-300 hover:bg-emerald-400/15 transition-colors">
                 <FileText className="size-4" /> Resume
               </a>
             </div>
@@ -127,7 +127,7 @@ export default function Page() {
                 {[
                   { n: "19+", label: "Projects" },
                   { n: "3", label: "Clients" },
-                  { n: "8+", label: "Yrs Expertise" },
+                  { n: "8+", label: "Years Expertise" },
                 ].map((m) => (
                   <div key={m.label} className="rounded-xl bg-white/[0.03] ring-1 ring-white/10 p-4 text-center">
                     <div className="text-2xl font-semibold">{m.n}</div>
@@ -144,7 +144,7 @@ export default function Page() {
                 right={
                   <a
                     href="/projects"
-                    className="rounded-lg border border-foreground/10 bg-background/20 px-3 py-1.5 text-sm hover:bg-background/30 transition-colors"
+                    className="rounded-lg border border-foreground/10 bg-background/20 px-3 py-1.5 text-sm hover:bg-emerald-400/15 transition-colors"
                   >
                     View All
                   </a>
@@ -221,8 +221,8 @@ export default function Page() {
               <h3 className="text-lg font-semibold">Let’s Work Together</h3>
               <p className="mt-1 text-sm text-foreground/60">Have an open frontend or full stack role? I’d love to help.</p>
               <div className="mt-4 flex items-center justify-center gap-3">
-                <a href="mailto:hello@ryanlecours.dev" className="rounded-xl border border-foreground/10 bg-background/20 px-3 py-2 hover:bg-background/30">Email</a>
-                <a href="/ryan_lecours_resume.pdf" className="rounded-xl border border-emerald-400/30 bg-emerald-400/10 px-3 py-2 text-emerald-300 hover:bg-emerald-400/15">Resume</a>
+                <a href="mailto:hello@ryanlecours.dev" className="rounded-xl border border-foreground/10 bg-background/20 px-3 py-2 hover:bg-emerald-400/15 transition-colors">Email</a>
+                <a href="/ryan_lecours_resume.pdf" className="rounded-xl border border-emerald-400/30 bg-emerald-400/10 px-3 py-2 text-emerald-300 hover:bg-emerald-400/15 transition-colors">Resume</a>
               </div>
             </div>
           </Card>
