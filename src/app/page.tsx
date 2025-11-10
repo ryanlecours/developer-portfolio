@@ -108,7 +108,7 @@ export default function Page() {
                 <SiGithub className="size-4" />
                 GitHub
               </a>
-              <a href="/resume.pdf" className="col-span-2 flex items-center justify-center gap-2 rounded-xl border border-emerald-400/30 bg-emerald-400/10 px-3 py-2 text-emerald-300 hover:bg-emerald-400/15 transition-colors">
+              <a href="/ryan_lecours_resume.pdf" download="/ryan_lecours_resume.pdf" className="col-span-2 flex items-center justify-center gap-2 rounded-xl border border-emerald-400/30 bg-emerald-400/10 px-3 py-2 text-emerald-300 hover:bg-emerald-400/15 transition-colors">
                 <FileText className="size-4" /> Resume
               </a>
             </div>
@@ -222,7 +222,7 @@ export default function Page() {
               <p className="mt-1 text-sm text-foreground/60">Have an open frontend or full stack role? I’d love to help.</p>
               <div className="mt-4 flex items-center justify-center gap-3">
                 <a href="mailto:hello@ryanlecours.dev" className="rounded-xl border border-foreground/10 bg-background/20 px-3 py-2 hover:bg-emerald-400/15 transition-colors">Email</a>
-                <a href="/ryan_lecours_resume.pdf" className="rounded-xl border border-emerald-400/30 bg-emerald-400/10 px-3 py-2 text-emerald-300 hover:bg-emerald-400/15 transition-colors">Resume</a>
+                <a href="/ryan_lecours_resume.pdf" download="/ryan_lecours_resume.pdf" className="rounded-xl border border-emerald-400/30 bg-emerald-400/10 px-3 py-2 text-emerald-300 hover:bg-emerald-400/15 transition-colors">Resume</a>
               </div>
             </div>
           </Card>
