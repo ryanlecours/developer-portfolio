@@ -51,5 +51,5 @@ export const TECH_ICON_REGISTRY: Record<TechKey, TechIconMeta> = {
   vite:        { icon: SiVite,        label: "Vite",         color: "#646CFF" },
   docker:      { icon: SiDocker,      label: "Docker",       color: "#2496ED" },
   git:         { icon: SiGit,         label: "Git",          color: "#F05032" },
-  github:      { icon: SiGithub,      label: "GitHub",       color: "#181717" },
+  github:      { icon: SiGithub,      label: "GitHub",       color: "#d0c6c6ff" },
 };
