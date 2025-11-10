@@ -1,22 +1,23 @@
-import type { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Geist, Geist_Mono } from 'next/font/google';
+import './globals.css';
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
-  title: "Ryan LeCours – Software Engineer",
-  description: "Frontend-leaning full-stack engineer specializing in React, TypeScript, and GraphQL.",
+  title: 'Ryan LeCours – Software Engineer',
+  description:
+    'Frontend-leaning full-stack engineer specializing in React, TypeScript, and GraphQL.',
 };
 
 export default function RootLayout({
@@ -30,8 +31,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-         <Analytics />
-         <SpeedInsights />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
