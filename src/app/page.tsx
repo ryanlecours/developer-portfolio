@@ -3,7 +3,7 @@ import Card from '@/components/ui/card';
 import SectionHeader from '@/components/ui/section-header';
 import TechIconGrid from '@/components/tech-icon-grid';
 import { Mail, FileText, MapPin, HandshakeIcon } from 'lucide-react';
-import { SiGithub } from 'react-icons/si';
+import { SiGithub, SiLinkedin } from 'react-icons/si';
 
 type Experience = {
   company: string;
@@ -91,13 +91,13 @@ export default function Page() {
                 href="https://linkedin.com/in/ryan-lecours/"
                 className="border-foreground/10 bg-background/20 flex items-center justify-center gap-2 rounded-xl border px-3 py-2 transition-colors hover:bg-emerald-400/15"
               >
-                <Mail className="size-4" /> Email
+                <SiLinkedin className="size-4" /> LinkedIn
               </a>
               <a
                 href="mailto:hello@ryanlecours.dev"
                 className="border-foreground/10 bg-background/20 flex items-center justify-center gap-2 rounded-xl border px-3 py-2 transition-colors hover:bg-emerald-400/15"
               >
-                <Mail className="size-4" /> LinkedIn
+                <Mail className="size-4" /> Email
               </a>
               <a
                 href="https://github.com/ryanlecours"
