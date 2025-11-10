@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Card from '@/components/ui/card';
 import SectionHeader from '@/components/ui/section-header';
 import TechIconGrid from '@/components/tech-icon-grid';
-import { Mail, FileText, MapPin } from 'lucide-react';
+import { Mail, FileText, MapPin, HandshakeIcon } from 'lucide-react';
 import { SiGithub } from 'react-icons/si';
 
 type Experience = {
@@ -173,6 +173,7 @@ export default function Page() {
                     src="/loamlogger.png"
                     alt="Loam Logger app preview"
                     className="absolute inset-0 size-full object-cover opacity-70 transition-opacity duration-300 group-hover:opacity-100"
+                    fill
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                   <div className="absolute bottom-3 left-3">
@@ -232,8 +233,10 @@ export default function Page() {
 
           {/* CTA */}
           <Card className="p-6 xl:col-span-3">
-            <div className="text-center">
-              <div className="mx-auto mb-4 size-12 rounded-2xl bg-white/10" />
+            <div className="flex flex-col items-center gap-4">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/[0.05] ring-1 ring-white/10">
+                <HandshakeIcon className="h-6 w-6 text-emerald-400" />
+              </div>
               <h3 className="text-lg font-semibold">Let’s Work Together</h3>
               <p className="text-foreground/60 mt-1 text-sm">
                 Have an open frontend or full stack role? I’d love to help.
