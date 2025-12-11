@@ -1,12 +1,23 @@
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import Card from '@/components/ui/card';
 import SectionHeader from '@/components/ui/section-header';
-import TechIconGrid from '@/components/tech-icon-grid';
-import { Mail, FileText, MapPin, HandshakeIcon } from 'lucide-react';
 import { SiGithub, SiLinkedin } from 'react-icons/si';
+import { MdEmail, MdLocationOn, MdHandshake } from 'react-icons/md';
+import { HiDocumentText } from 'react-icons/hi2';
 import MotionFade from '@/components/MotionFade';
-import { ExperienceSection } from '@/components/ExperienceSection';
 import { experience } from '@/data/experience';
+
+const TechIconGrid = dynamic(() => import('@/components/tech-icon-grid'), {
+  ssr: true,
+});
+
+const ExperienceSection = dynamic(() => import('@/components/ExperienceSection').then(mod => ({ default: mod.ExperienceSection })), {
+  ssr: true,
+});
+
+export const dynamicParams = false;
+export const revalidate = false;
 
 export default function Page() {
   const year = new Date().getFullYear();
@@ -43,7 +54,7 @@ export default function Page() {
                   Frontend-leaning Full-Stack Engineer
                 </p>
                 <p className="text-foreground/60 mt-1 inline-flex items-center gap-1 text-xs">
-                  <MapPin className="size-3" /> Bellingham, WA
+                  <MdLocationOn className="size-3" /> Bellingham, WA
                 </p>
               </div>
 
@@ -53,6 +64,7 @@ export default function Page() {
                 alt="Ryan LeCours"
                 width={128}
                 height={128}
+                priority
                 className="shrink-0 rounded-xl object-cover ring-1 ring-white/15"
               />
             </div>
@@ -69,7 +81,7 @@ export default function Page() {
                 href="mailto:hello@ryanlecours.dev"
                 className="border-foreground/10 bg-background/20 flex items-center justify-center gap-2 rounded-xl border px-3 py-2 transition-colors hover:bg-emerald-400/15"
               >
-                <Mail className="size-4" /> Email
+                <MdEmail className="size-4" /> Email
               </a>
               <a
                 href="https://github.com/ryanlecours"
@@ -85,7 +97,7 @@ export default function Page() {
                 download="/ryan_lecours_resume.pdf"
                 className="col-span-3 flex items-center justify-center mx-auto gap-2 rounded-xl border border-emerald-400/30 bg-emerald-400/10 px-8 py-2 text-emerald-300 transition-colors hover:bg-emerald-400/15"
               >
-                <FileText className="size-4" /> Resume
+                <HiDocumentText className="size-4" /> Resume
               </a>
             </div>
           </Card>
@@ -139,6 +151,8 @@ export default function Page() {
                     alt="Loam Logger app preview"
                     className="absolute inset-0 size-full object-cover opacity-70 transition-opacity duration-300 group-hover:opacity-100"
                     fill
+                    priority
+                    sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent" />
                   <div className="absolute bottom-3 left-3">
@@ -176,7 +190,7 @@ export default function Page() {
           <Card className="p-6 xl:col-span-2">
             <div className="flex flex-col items-center gap-4">
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/5 ring-1 ring-white/10">
-                <HandshakeIcon className="h-6 w-6 text-emerald-400" />
+                <MdHandshake className="h-6 w-6 text-emerald-400" />
               </div>
               <h3 className="text-lg font-semibold">Let’s Work Together</h3>
               <p className="text-foreground/60 mt-1 text-sm">

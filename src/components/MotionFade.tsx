@@ -15,7 +15,7 @@ export default function MotionFade({
 }: Props) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 10 }}
+      initial={{ opacity: 1, y: 0 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay, duration, ease: 'easeOut' }}
       className={className}
