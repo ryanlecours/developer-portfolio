@@ -144,24 +144,47 @@ export default function Page() {
                   href="https://loamlogger.app"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative aspect-video w-full overflow-hidden rounded-xl bg-white/3 ring-1 ring-white/10 transition-all duration-300 hover:ring-emerald-400/40"
+                  className="group relative w-full overflow-hidden rounded-2xl bg-linear-to-br from-[#2d3e2f] to-[#1a241b] ring-1 ring-white/10 transition-all duration-500 hover:ring-emerald-400/50 hover:shadow-[0_20px_60px_-15px_rgba(16,185,129,0.3)]"
                 >
-                  <Image
-                    src="/loamlogger.png"
-                    alt="Loam Logger app preview"
-                    className="absolute inset-0 size-full object-cover opacity-70 transition-opacity duration-300 group-hover:opacity-100"
-                    fill
-                    priority
-                    sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
-                  />
-                  <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent" />
-                  <div className="absolute bottom-3 left-3">
-                    <h3 className="text-lg font-semibold text-white">
-                      Loam Logger
-                    </h3>
-                    <p className="text-sm text-neutral-300">
-                      A Strava-style mountain bike analytics app
-                    </p>
+                  <div className="relative aspect-16/10 overflow-hidden">
+                    <Image
+                      src="/loamlogger.png"
+                      alt="Loam Logger app preview"
+                      className="absolute inset-0 size-full object-cover opacity-80 transition-all duration-500 group-hover:scale-105 group-hover:opacity-90"
+                      fill
+                      priority
+                      sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-linear-to-b from-transparent via-black/10 to-black/80" />
+
+                    {/* Content overlay */}
+                    <div className="absolute inset-0 flex flex-col justify-end p-5">
+                      <div className="transform transition-transform duration-300 group-hover:-translate-y-1">
+                        <div className="mb-2 inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-400/10 px-3 py-1 backdrop-blur-sm">
+                          <span className="size-1.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(16,185,129,0.6)]" />
+                          <span className="text-xs font-medium text-emerald-300">Live Project</span>
+                        </div>
+
+                        <h3 className="mb-2 text-2xl font-bold tracking-tight text-white">
+                          Loam Logger
+                        </h3>
+
+                        <p className="max-w-md text-sm leading-relaxed text-neutral-200/90">
+                          A comprehensive web application for cyclists to log rides, analyze performance metrics, and track bike component wear over time.
+                        </p>
+
+                        <div className="mt-3 flex flex-wrap gap-2">
+                          {['React', 'TypeScript', 'GraphQL', 'PostgreSQL'].map((tech) => (
+                            <span
+                              key={tech}
+                              className="rounded-md bg-white/10 px-2 py-0.5 text-xs font-medium text-white/80 backdrop-blur-sm ring-1 ring-white/10"
+                            >
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </a>
               </div>
