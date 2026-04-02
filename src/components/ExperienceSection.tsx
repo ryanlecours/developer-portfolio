@@ -7,6 +7,7 @@ type Job = {
   company: string
   role: string
   period: string
+  context?: string
   bullets: string[]
   tags?: string[]
 }
@@ -64,6 +65,10 @@ export function ExperienceSection({ experience }: { experience: Job[] }) {
             </h3>
             <span className="text-foreground/60 text-xs">{job.period}</span>
           </header>
+
+          {job.context && (
+            <p className="text-foreground/50 mt-2 text-sm italic">{job.context}</p>
+          )}
 
           {!!job.bullets?.length && (
             <ul className="text-foreground/90 mt-4 list-disc space-y-2 pl-5">
