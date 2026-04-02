@@ -61,7 +61,7 @@ export function ExperienceSection({ experience }: { experience: Job[] }) {
         >
           <header className="flex flex-wrap items-baseline justify-between gap-2">
             <h3 className="text-lg font-semibold md:text-xl">
-              {job.role} — {job.company}
+              {job.role} | {job.company}
             </h3>
             <span className="text-foreground/60 text-xs">{job.period}</span>
           </header>
