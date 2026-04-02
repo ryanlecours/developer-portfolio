@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import Card from '@/components/ui/card';
 import SectionHeader from '@/components/ui/section-header';
@@ -130,12 +131,12 @@ export default function Page() {
                 title="Projects"
                 subtitle="My current personal work"
                 right={
-                  <a
+                  <Link
                     href="/projects"
                     className="border-foreground/10 bg-background/20 rounded-lg border px-3 py-1.5 text-sm transition-colors hover:bg-emerald-400/15"
                   >
                     View All
-                  </a>
+                  </Link>
                 }
               />
 
