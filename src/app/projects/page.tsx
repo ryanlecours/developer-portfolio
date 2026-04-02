@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Card from '@/components/ui/card';
-import SectionHeader from '@/components/ui/section-header';
 import MotionFade from '@/components/MotionFade';
 import { SiGithub } from 'react-icons/si';
 import { HiArrowLeft, HiArrowTopRightOnSquare } from 'react-icons/hi2';
