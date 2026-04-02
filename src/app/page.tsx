@@ -2,7 +2,8 @@ import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import Card from '@/components/ui/card';
 import SectionHeader from '@/components/ui/section-header';
-import { SiGithub, SiLinkedin } from 'react-icons/si';
+import { SiGithub } from 'react-icons/si';
+import { FaLinkedin } from 'react-icons/fa';
 import { MdEmail, MdLocationOn, MdHandshake } from 'react-icons/md';
 import { HiDocumentText } from 'react-icons/hi2';
 import MotionFade from '@/components/MotionFade';
@@ -75,7 +76,7 @@ export default function Page() {
                 href="https://linkedin.com/in/ryan-lecours/"
                 className="border-foreground/10 bg-background/20 flex items-center justify-center gap-2 rounded-xl border px-3 py-2 transition-colors hover:bg-emerald-400/15"
               >
-                <SiLinkedin className="size-4" /> LinkedIn
+                <FaLinkedin className="size-4" /> LinkedIn
               </a>
               <a
                 href="mailto:hello@ryanlecours.dev"
@@ -93,8 +94,8 @@ export default function Page() {
                 GitHub
               </a>
               <a
-                href="/ryan_lecours_resume.pdf"
-                download="/ryan_lecours_resume.pdf"
+                href="/RyanLeCours_Resume.pdf"
+                download="/RyanLeCours_Resume.pdf"
                 className="col-span-3 flex items-center justify-center mx-auto gap-2 rounded-xl border border-emerald-400/30 bg-emerald-400/10 px-8 py-2 text-emerald-300 transition-colors hover:bg-emerald-400/15"
               >
                 <HiDocumentText className="size-4" /> Resume
@@ -196,6 +197,18 @@ export default function Page() {
           {/* MIDDLE COLUMN */}
           <div className="flex flex-col gap-6 xl:col-start-2 xl:row-start-1">
             <Card className="p-5">
+              <SectionHeader title="About Me" />
+              <p className="text-foreground/80 text-sm leading-relaxed">
+                Senior Software Engineer with 8+ years building scalable web applications
+                in JavaScript, TypeScript, React, and Node.js. I specialize in leading
+                front-end architecture, designing GraphQL APIs, and shipping accessible,
+                performant user experiences — from enterprise financial platforms serving
+                millions of users to mission-critical defense software. Outside of work,
+                I build full-stack side projects with modern tooling and AI-assisted
+                development, and love mountain biking in the mountains surrounding Bellingham, WA.
+              </p>
+            </Card>
+            <Card className="p-5">
               <SectionHeader title="Work Experience" />
               <ExperienceSection experience={experience} />
             </Card>
@@ -227,8 +240,8 @@ export default function Page() {
                   Email
                 </a>
                 <a
-                  href="/ryan_lecours_resume.pdf"
-                  download="/ryan_lecours_resume.pdf"
+                  href="/RyanLeCours_Resume.pdf"
+                  download="/RyanLeCours_Resume.pdf"
                   className="rounded-xl border border-emerald-400/30 bg-emerald-400/10 px-3 py-2 text-emerald-300 transition-colors hover:bg-emerald-400/15"
                 >
                   Resume

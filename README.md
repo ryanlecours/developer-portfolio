@@ -32,7 +32,7 @@ src/
  │   └─ not-found.tsx    # 404 page
  └─ public/
      ├─ me.jpg           # Headshot image
-     └─ ryan_lecours_resume.pdf       # Downloadable resume
+     └─ RyanLeCours_Resume.pdf       # Downloadable resume
 ```
 
 ---

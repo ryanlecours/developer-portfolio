@@ -2,6 +2,7 @@ type Experience = {
   company: string;
   role: string;
   period: string;
+  context: string;
   bullets: string[];
   tags?: string[];
 };
@@ -11,6 +12,7 @@ export const experience: Experience[] = [
     company: 'DCS Corp',
     role: 'Software Engineer III',
     period: 'May 2023 – Present | Remote',
+    context: 'Defense contractor building mission-critical flight-planning software for the U.S. Department of Defense.',
     bullets: [
       'Built modular React + TypeScript front-end packages in a secure monorepo for flight-planning software, enabling map rendering, geospatial overlays, and interactive tools adopted across multiple teams.',
       'Optimized CI/CD pipelines through Azure Blob Storage caching, cutting build times by 91 percent (~50 minutes per build).',
@@ -24,6 +26,7 @@ export const experience: Experience[] = [
     company: 'Fidelity Investments',
     role: 'Senior Software Engineer',
     period: '2018 – 2023 | Merrimack, NH',
+    context: 'Customer-facing financial platforms serving millions of users. Promoted 3 times in 5 years from Associate to Senior.',
     bullets: [
       'Built and maintained 4 Vue and 7 Angular micro frontends, defining front-end standards that improved performance, accessibility, and maintainability across enterprise applications',
       'Developed and maintained 13 Node.js GraphQL subgraphs, modernizing legacy Java REST APIs into scalable, federated services powering real-time financial workflows that improved data response times by 40%.',
