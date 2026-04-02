@@ -10,7 +10,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Projects – Ryan LeCours',
   description:
-    'Personal and open-source projects by Ryan LeCours — React, TypeScript, GraphQL, and more.',
+    'Personal and open-source projects by Ryan LeCours. React, TypeScript, GraphQL, and more.',
 };
 
 export default function ProjectsPage() {
@@ -81,6 +81,13 @@ export default function ProjectsPage() {
                         </p>
                       </div>
                     </div>
+
+                    {/* Problem statement */}
+                    {project.problem && (
+                      <p className="text-foreground/60 mt-3 text-sm leading-relaxed border-l-2 border-emerald-400/30 pl-3">
+                        {project.problem}
+                      </p>
+                    )}
 
                     {/* Highlights */}
                     {project.highlights && (

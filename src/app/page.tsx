@@ -203,7 +203,7 @@ export default function Page() {
                 Senior Software Engineer with 8+ years building scalable web applications
                 in JavaScript, TypeScript, React, and Node.js. I specialize in leading
                 front-end architecture, designing GraphQL APIs, and shipping accessible,
-                performant user experiences — from enterprise financial platforms serving
+                performant user experiences, from enterprise financial platforms serving
                 millions of users to mission-critical defense software. Outside of work,
                 I build full-stack side projects with modern tooling and AI-assisted
                 development, and love mountain biking in the mountains surrounding Bellingham, WA.
